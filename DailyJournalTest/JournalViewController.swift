@@ -12,7 +12,7 @@ class JournalViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var datePicker: UIDatePicker!
     
-    var entryVC: EntriesTableViewController?
+    var entriesVC: EntriesTableViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +25,8 @@ class JournalViewController: UIViewController {
         entry.date = datePicker.date
         entry.text = textView.text
         
-        entryVC?.entries.append(entry)
-        entryVC?.tableView.reloadData()
+        entriesVC?.entries.append(entry)
+        entriesVC?.tableView.reloadData()
         
     }
     

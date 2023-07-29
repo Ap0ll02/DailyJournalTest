@@ -69,13 +69,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="nk1-My-kzp">
-                                <rect key="frame" x="0.0" y="132" width="393" height="36"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="nk1-My-kzp">
+                                <rect key="frame" x="0.0" y="131.33333333333334" width="393" height="36.333333333333343"/>
                             </datePicker>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3rO-xM-qD3">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Text Here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3rO-xM-qD3">
                                 <rect key="frame" x="26" y="207" width="341" height="565"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="565" id="EEa-r7-uYF"/>
+                                    <constraint firstAttribute="width" constant="341" id="cEw-cx-AL5"/>
+                                    <constraint firstAttribute="width" secondItem="3rO-xM-qD3" secondAttribute="height" multiplier="341:565" id="fUz-c7-mz6"/>
+                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -86,9 +90,12 @@
                         <constraints>
                             <constraint firstItem="nk1-My-kzp" firstAttribute="centerY" secondItem="00p-tv-bqk" secondAttribute="centerY" constant="-276.5" id="J4T-k5-sHI"/>
                             <constraint firstItem="3rO-xM-qD3" firstAttribute="leading" secondItem="3TI-G1-2mm" secondAttribute="leading" constant="26" id="JHk-Pw-r7a"/>
-                            <constraint firstItem="3rO-xM-qD3" firstAttribute="top" secondItem="nk1-My-kzp" secondAttribute="bottom" constant="39.333333333333343" id="JRY-vy-8lN"/>
                             <constraint firstItem="nk1-My-kzp" firstAttribute="centerX" secondItem="00p-tv-bqk" secondAttribute="centerX" id="Y8L-RU-iQI"/>
+                            <constraint firstItem="nk1-My-kzp" firstAttribute="leading" secondItem="3TI-G1-2mm" secondAttribute="leading" id="dlJ-SM-w9c"/>
                             <constraint firstItem="3TI-G1-2mm" firstAttribute="trailing" secondItem="3rO-xM-qD3" secondAttribute="trailing" constant="26" id="ewI-YE-gqH"/>
+                            <constraint firstItem="3TI-G1-2mm" firstAttribute="bottom" secondItem="3rO-xM-qD3" secondAttribute="bottom" constant="46" id="i9q-mJ-Yfj"/>
+                            <constraint firstItem="3rO-xM-qD3" firstAttribute="top" secondItem="nk1-My-kzp" secondAttribute="bottom" constant="39.329999999999998" id="igi-zh-qqO"/>
+                            <constraint firstItem="nk1-My-kzp" firstAttribute="trailing" secondItem="3TI-G1-2mm" secondAttribute="trailing" id="nBR-AB-MIf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1tl-60-JQQ">
