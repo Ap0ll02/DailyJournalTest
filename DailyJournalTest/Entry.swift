@@ -10,4 +10,5 @@ import Foundation
 class Entry{
     var text = ""
     var date = Date()
+    var mood = ""
 }
